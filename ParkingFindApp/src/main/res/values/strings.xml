@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_map">Mapa</string>
+    <string name="title_list">Lista</string>
+    <string name="title_details">Szczegóły</string>
+    <string name="poniedziałek">poniedziałek</string>
+    <string name="wtorek">wtorek</string>
+    <string name="środa">środa</string>
+    <string name="czwartek">czwartek</string>
+    <string name="piątek">piątek</string>
+    <string name="czynneCałąDobę">Czynne całą dobę</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="preference_file_key">preference_file_key</string>
+    <string name="filterSwitchState">switchOn</string>
+</resources>

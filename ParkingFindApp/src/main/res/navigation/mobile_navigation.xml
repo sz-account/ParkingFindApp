@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/map">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.myapplication.ui.map.MapsFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_map_to_navigation_notifications2"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.list.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_map_to_navigation_notifications2"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.details.DetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/showInfoFragment"
+        android:name="com.example.myapplication.ui.map.ShowInfoFragment"
+        android:label="fragment_show_info"
+        tools:layout="@layout/fragment_show_info" >
+        <action
+            android:id="@+id/action_showInfoFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+</navigation>
